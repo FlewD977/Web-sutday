@@ -1,0 +1,27 @@
+p {
+    color: brown;
+    text-align: center;
+}
+
+/* 未点击过的链接 */
+.newa a:link {
+    color: red;
+    text-decoration: none;
+}
+/* 点击过的链接*/
+.newa a:visited {
+    color: pink;
+}
+/* 鼠标经过的链接 */
+.newa a:hover {
+    color: chartreuse;
+}
+/* 鼠标点击还未弹起时的链接 */
+.newa a:active {
+    color: blueviolet;
+}
+
+/* 获得光标的input表单元素选取出来 */
+input:focus {
+    background-color: aqua;
+}

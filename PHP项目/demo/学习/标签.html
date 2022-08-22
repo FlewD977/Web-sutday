@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="标签CSS.css">
+</head>
+
+<body>
+    <!--<html>根标签</html>-->
+    <!--<head>文档头部,在head中必须要设置的是title</head>-->
+    <!--<title>文档标题</title>-->
+    <!--<body>文档主体,内容都在body里</body>-->
+
+    <!-- 标题标签<h1>---<h6> -->
+    <h1>我是一级</h1>
+    <h2>我是二级</h2>
+    <h3>我是三级</h3>
+    <h4>我是四级</h4>
+    <h5>我是五级</h5>
+    <h6>我是六级</h6>
+
+    <!-- 段落标签<p> -->
+    <p>我是一个段落标签</p>
+    <p>我也是一个段落标签</p>
+
+    <!--    单标签-->
+    <!--换行--><br>
+
+    <!--文本格式化标签-->
+    <strong>加粗</strong>
+    <b>加粗</b>
+
+    <em>倾斜</em>
+    <i>倾斜</i>
+
+    <del>删除线</del>
+    <s>删除线</s>
+
+    <ins>下划线</ins>
+    <u>下环线</u>
+
+    <div>我是div 一个div独占一行</div>
+    <div>我是div 一个div独占一行</div>
+    <span>我是span1</span>
+    <span>我是span2</span>
+    <span>我是span3</span>
+
+    <!--图像标签和路径-->
+    <img src="../文件/wallhaven-g7mrm3_1920x1080.png" alt="nihao" title="pic" width="200">
+
+    <!--超链接标签-->
+    <!--外部链接-->
+    <!--用于定义超链接，从一个页面到另一个页面-->
+    <a href="http://www.baidu.com" target="_blank">带你去新地方</a><br>
+    <!--内部链接-->
+    <a href="PHP基础.php">内部链接</a><br>
+    <a href="#">NULL</a><br>
+    <!--下载文件-->
+    <a href="../文件/软考网络工程师配置高频知识点V3.2（83页%20重点）.pdf">Download</a><br>
+    <!--元素链接-->
+    <a href="https://wallhaven.cc/w/j3g7yy"><img src="../文件/file.jpg" alt="点击跳转" height="100" /></a><br>
+    <!--锚点链接-->
+    <a href="#dis">点我直达</a>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p id="dis">目标锚点</p><a href="#">返回顶部</a>
+
+
+    <!--表格标签-->
+    <br>
+    <table align="center">
+        <!--    <tr>-->
+        <!--        <td>flew</td>-->
+        <!--    </tr>&nbsp;-->
+
+        <!--    <tr>-->
+        <!--        <td>age</td>-->
+        <!--    </tr>&nbsp;-->
+
+        <!--    <tr>-->
+        <!--        <td>sex</td>-->
+        <!--    </tr>-->
+
+        <!--    <tr><td>flew</td>&nbsp;<td>age</td>&nbsp;<td>sex</td></tr>-->
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>flew</td>
+                <td>18</td>
+                <td>man</td>
+            </tr>
+            <tr>
+                <td>五十名</td>
+                <td>78</td>
+                <td>man</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--    合并单元格-->
+    <table border="2">
+        <tr>
+            <td>1</td>
+            <td colspan="2">2</td> >
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <!--无序列表-->
+    <p>你喜欢的食物？</p>
+    <ul>
+        <li>香蕉</li>
+        <li>苹果</li>
+        <li>橘子</li>
+    </ul>
+    <!--    有序列表-->
+    <p>你喜欢看的电影?</p>
+    <ol>
+        <li>恐怖</li>
+        <li>爱情</li>
+        <li>喜剧</li>
+    </ol>
+
+    <!--自定义列表-->
+    <dl>
+        <dt>关注我们</dt>
+        <dd>新浪微博</dd>
+        <dd>bilibili</dd>
+        <dd>联系我们</dd>
+    </dl>
+
+    <!--    表单域-->
+    <!--<form action="PHP基础.php" method="post" name="个人信息">-->
+
+    <!--</form>-->
+
+    <!--    表单控件-->
+    <form>
+        用户名：<input type="text" value="请输入你的用户名"> <br>
+        密码：<input type="password" maxlength="6"><br>
+        性别：<input type="radio" name="sex" value="男">男 <input type="radio" name="sex" value="女">女</input><br>
+        年龄：<input type="checkbox" name="age">18~20</input><input type="checkbox" name="age">21~30</input><br>
+        默认选择：<input type="radio" checked="checked"><br>
+        <input type="submit" value="点我提交"></input> <br>
+        <input type="reset" value="点我清除"></input><br>
+        <input type="button" value="获取短信验证码"><br>
+        <input type="file" value='点击上传'><br>
+
+        <label for="music">
+            简介：<input type="text" name="music" id="music"><br>
+        </label>
+        <br>
+        <input type="radio" name="sexs" id="man"> <label for="man">男</label></input>
+        <input type="radio" name="sexs" id="woman"> <label for="woman">女</label></input>
+
+    </form>
+
+    <!--        下拉列表-->
+    兴趣爱好：
+    <select>
+        <option>音乐</option>
+        <option>篮球</option>
+        <option>唱</option>
+        <option>跳</option>
+        <option selected="selected">rap</option>
+    </select>
+
+    <!--    文本框标签-->
+    更多建议；
+    <textarea rows="4" cols="20">
+
+
+    </textarea>
+
+    <!-- 伪类选择器  -->
+    <!--链接伪类  -->
+    <br>
+    <div class="newa">
+        <a href="#">点我</a>
+
+    </div>
+
+
+</body>
+
+</html>
