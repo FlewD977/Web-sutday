@@ -25,3 +25,23 @@ p {
 input:focus {
     background-color: aqua;
 }
+
+/* 把行内元素a转换为块元素 */
+.ab {
+    display: block;
+    background-color: aquamarine;
+    width: 12%;
+    height: 20%;
+}
+
+/* 把块元素div转换行内元素 */
+.ab2 {
+    display: inline;
+    background-color: blueviolet;
+
+}
+/* 行内元素span转换为行内块元素 */
+.ab3 {
+    display: inline-block;
+    background-color: cadetblue;
+}
