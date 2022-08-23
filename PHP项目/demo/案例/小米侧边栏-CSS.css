@@ -1,6 +1,15 @@
 a {
     display: block;
+    height: 40px;
+    width: 230px;
+    text-align: left;
+    font-size: 15px;
+    background-color:rgb(83,87,88);
+    /* 删除下划线 */
+    text-decoration: none;
+    /* 首行缩进 */
+    text-indent: 2em;
 }
 a:hover {
-    background-color: darkgray;
+    background-color:rgb(254,103,0);
 }

@@ -45,3 +45,10 @@ input:focus {
     display: inline-block;
     background-color: cadetblue;
 }
+.cen {
+    /* 文字行高 */
+    line-height: 40px;
+    /* div高度 */
+    height: 40px;
+    background-color: bisque;
+}
