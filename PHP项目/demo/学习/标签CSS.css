@@ -1,54 +1,75 @@
 p {
-    color: brown;
-    text-align: center;
+  color: brown;
+  text-align: center;
 }
 
 /* 未点击过的链接 */
 .newa a:link {
-    color: red;
-    text-decoration: none;
+  color: red;
+  text-decoration: none;
 }
 /* 点击过的链接*/
 .newa a:visited {
-    color: pink;
+  color: pink;
 }
 /* 鼠标经过的链接 */
 .newa a:hover {
-    color: chartreuse;
+  color: chartreuse;
 }
 /* 鼠标点击还未弹起时的链接 */
 .newa a:active {
-    color: blueviolet;
+  color: blueviolet;
 }
 
 /* 获得光标的input表单元素选取出来 */
 input:focus {
-    background-color: aqua;
+  background-color: aqua;
 }
 
 /* 把行内元素a转换为块元素 */
 .ab {
-    display: block;
-    background-color: aquamarine;
-    width: 12%;
-    height: 20%;
+  display: block;
+  background-color: aquamarine;
+  width: 12%;
+  height: 20%;
 }
 
 /* 把块元素div转换行内元素 */
 .ab2 {
-    display: inline;
-    background-color: blueviolet;
-
+  display: inline;
+  background-color: blueviolet;
 }
 /* 行内元素span转换为行内块元素 */
 .ab3 {
-    display: inline-block;
-    background-color: cadetblue;
+  display: inline-block;
+  background-color: cadetblue;
 }
 .cen {
-    /* 文字行高 */
-    line-height: 40px;
-    /* div高度 */
-    height: 40px;
-    background-color: bisque;
+  /* 文字行高 */
+  line-height: 40px;
+  /* div高度 */
+  height: 40px;
+  background-color: bisque;
+}
+.tt1 {
+  /* 指定为透明  */
+  background-color: cadetblue;
+  background-color: transparent;
+  /* width: 200px;
+  height: 200px; */
+  /* 指定背景图 none（默认） */
+  background-image: url(../文件/截屏2022-08-25\ 14.30.33.png);
+  /* 设置背景不平铺 因为如果图片太小 背景会多次复制 也就是平铺 */
+  /* repeat 平铺 (默认)
+     no-repeat 不平铺
+     repeat-x  按照x轴平铺
+     repeat-y  按照y轴平铺
+  */
+  background-repeat: no-repeat;
+
+  /* 改变背景图片位置  方位名次/精确单位
+    方位名词：left/right/center/top/bottom
+    精确单位：px 百分比
+  */
+  background-position: ;
 }
