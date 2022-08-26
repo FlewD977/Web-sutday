@@ -68,8 +68,52 @@ input:focus {
   background-repeat: no-repeat;
 
   /* 改变背景图片位置  方位名次/精确单位
-    方位名词：left/right/center/top/bottom
-    精确单位：px 百分比
+    方位名词：left/right/center/top/bottom 
+    right bottom和 bottom right 效果一样
   */
-  background-position: ;
+  background-position: center top; /*向上居中*/
+  background-position: right bottom; /*右下*/
+  /* 精确单位：px 百分比
+    第一个一定是x坐标 第二个一定是y坐标
+  */
+  background-position: 20px 50px;
+  /*混合单位 同样第一个是x 第二个是y */
+  background-position: center 50px;
+
+  /* 背景图像固定（背景附着） 
+  scroll背景图像根据对象内容滚动 默认
+  fixed 背景图像固定
+  */
+  background-attachment: fixed;
+
+  /* 背景复合写法 将属性合并在一个background中
+  1.背景颜色，2.背景图片地址，3.背景平铺
+  4.背景图像滚动，5.背景图片位置 顺序没有要求
+  */
+  /* background: cadetblue url() no-repeat fixed center top; */
+}
+
+.tt2 {
+  height: 40px;
+  width: 118px;
+  background-color: bisque;
+  font-size: 14px;
+  line-height: 40px;
+  background-image: url(https://game.gtimg.cn/images/js/title/title_sprite.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-image: url(https://i0.hdslb.com/bfs/archive/10924a131e7ee49bd88696bc6776f92cfe6ca172.png@3840w_360h_1c_90q.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* 背景色半透明 */
+.tt3 {
+  width: 400px;
+  height: 300px;
+  /* 最后一个参数是alpha透明的参数 取值在0-1之间 */
+  background: rgba(0, 0, 0, 0.3);
 }
