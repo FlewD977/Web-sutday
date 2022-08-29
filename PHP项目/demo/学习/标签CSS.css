@@ -39,6 +39,9 @@ input:focus {
   display: inline;
   background-color: blueviolet;
 }
+.ab2 {
+  background-color: brown;
+}
 /* 行内元素span转换为行内块元素 */
 .ab3 {
   display: inline-block;
@@ -116,4 +119,13 @@ body {
   height: 300px;
   /* 最后一个参数是alpha透明的参数 取值在0-1之间 */
   background: rgba(0, 0, 0, 0.3);
+}
+.tt4 {
+  background-color: aqua;
+}
+li {
+  color: red;
+}
+ul li {
+  color: black;
 }
