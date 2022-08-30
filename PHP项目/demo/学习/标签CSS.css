@@ -129,3 +129,91 @@ li {
 ul li {
   color: black;
 }
+.nav2 {
+  width: 200px;
+  border-width: 3px;
+  /* 无边框 none（默认） solid 实线边框 hidden 隐藏边框 double双线边框  dashe虚线边框d
+  border-style: solid;
+  /* border-style: dashed; */
+  border-color: rosybrown;
+
+  /* 边框复写  没有顺序*/
+  border: 1px solid royalblue;
+  /* 边框分开写法 只设定上边框 */
+  border-top: 5px lawngreen solid;
+
+  /* 表格细线边框 控制相邻单元格的边框 collapse 合并*/
+  border-collapse: collapse;
+}
+/* 表格与单元格都有合并效果实现 ，代表复合选择器 选择多组 */
+.nav3,
+td {
+  width: 300px;
+  height: 100px;
+  border-collapse: collapse;
+  border: 1px solid pink;
+  text-align: center;
+}
+.nav4_1 {
+  /* padding-left左内边距 top上边距 right右边距 bottom下边距 */
+  padding-left: 300px;
+
+  /* padding复合写法 格式padding：值1 值2 值3 值4 
+  值1:代表上下左右都有x像素内边距
+  值2:代表上下有x像素内边距，左右边距是x像素
+  值3:代表上有x像素内边距，左右边距是x像素，下内边距是x
+  值4:代表上有x像素内边距，左内边距是x像素，右内边距是x像素，下内边距是x像素 顺时针
+  */
+
+  /* 注意：padding也会影响盒子的大小 同样减去边框 */
+  padding: 1px 10px 20px 5px;
+  /* 通常使用padding去撑开盒子 使其对衬 参考 新浪导航栏案例 
+    注意：若盒子本身没有指定width/height padding则无法撑开盒子大小
+  */
+}
+
+.nav4_2 {
+  /* 设置外边距，既控制盒子与盒子之间的距离  与padding一致包括使用方法
+    格式：margin- left左外边距 -right右外边距 -top上外边距 -bottom下外边距
+  */
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  margin: 10px 0 0 0;
+}
+
+.nav4_3 {
+  height: 400px;
+  width: 900px;
+  background-color: burlywood;
+  /* 让盒子水平居中 */
+  margin: 30px auto;
+}
+/* 行内元素居中 */
+.nav4_4 {
+  text-align: center;
+}
+
+.nav4_5_1,
+.nav4_5_2 {
+  background-color: rgb(150, 118, 78);
+  width: 200px;
+  height: 200px;
+}
+.nav4_5_1 {
+  margin-bottom: 100px;
+}
+/* .nav4_5_2 {
+  margin-top: 100px;
+} */
+
+.fa {
+  width: 400px;
+  height: 400px;
+  background-color: plum;
+}
+.son {
+  width: 200px;
+  height: 200px;
+  background-color: bisque;
+}

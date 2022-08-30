@@ -243,6 +243,60 @@
         <li>haha</li>
     </ul>
     
+    <!-- 盒子模型 -->
+    <!-- border -->
+    <!-- 注意边框会改变盒子整体大小，测量时减去边框 -->
+    <div class="nav2">我是border</div>  <br>
+    
+    <table class="nav3">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <!-- 内边距 padding -->
+    <div class="nav4_1">
+        我是个盒子
+    </div>
+
+    <!-- 外边距 margin -->
+    <div class="nav4_2">我是个盒子1，来帮助学习外边距margin</div>
+    <div class="nav4_2">我是个盒子2，来帮助学习外边距margin</div>
+
+    <!-- 外边距典型应用 让块级盒子水平居中
+    1。盒子必须指定宽度 width
+    2. 盒子左右的外边距都设置为auto 
+    3.对于行内元素以及行内块儿元素无效
+    -->
+    <div class="nav4_3">左边</div>
+    <div class="nav4_3">右边</div>
+
+    <!-- 让行内元素以及行内块元素居中
+        给其夫元素添加text- align：center
+    -->
+    <div class="nav4_4">
+        <span>文字</span>
+    </div>
+    <!-- 外边距合并 使用margin定义块元素的垂直外边距使，可能出现外边距合并
+        1.相邻块元素垂直外边距合并 上下合并
+            当两个盒子都设置不同的外边距大小，则自动取较大值 
+            解决：给一个盒子添加margin
+        2.嵌套块元素垂直外边距塌陷 父子级关系
+
+    -->     
+        <div class="nav4_5_1">合并1</div>
+        <div class="nav4_5_2">合并2</div><br>
+    
+        <!-- 嵌套外边距 -->
+        <div class="fa">
+            <div class="son">1</div>
+        </div>
 </body>
+
 
 </html>
