@@ -211,9 +211,17 @@ td {
   width: 400px;
   height: 400px;
   background-color: plum;
+  /* 解决方案
+  1，为父div定义上边框
+  2，为父div定义上内边距
+  3，为父元素添加overflow：hidden
+   */
+  overflow: hidden;
 }
 .son {
   width: 200px;
   height: 200px;
   background-color: bisque;
+  /* 将子div向下移动100px 但父级div移动了100px 就称为嵌套块元素垂直外边距塌陷 */
+  margin-top: 100px;
 }

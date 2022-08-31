@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f5f5f5;
+}
+.box {
+  height: 415px;
+  width: 298px;
+  /* 让块级盒子居中水平对齐 */
+  margin: 100px auto;
+  background-color: #fff;
+}
+.box img {
+  /* 图片继承父级的宽度100% */
+  width: 100%;
+}
+.reviwe {
+  font-size: 17px;
+  height: 70px;
+  padding: 0 28px;
+  /* 因为没有width属性所以用padding-top会将盒子撑开 */
+  margin-top: 30px;
+}
+.appraise {
+  color: #b0b0b0;
+  padding: 0 28px;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.info h4 {
+  /* 转换为行内块元素 可以放在一行上*/
+  display: inline-block;
+  font-weight: 400;
+}
+.info {
+  font-size: 14px;
+  margin-top: 15px;
+  padding: 0 28px;
+}
+.info span {
+  color: #ff6700;
+}
